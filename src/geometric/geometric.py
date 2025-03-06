@@ -18,17 +18,8 @@ class Geometria:
         return base*altura
     
     def perimetro_rectangulo(self, base, altura):
-        """
-        Calcula el perímetro de un rectángulo.
-        
-        Args:
-            base (float): Longitud de la base del rectángulo
-            altura (float): Altura del rectángulo
-            
-        Returns:
-            float: Perímetro del rectángulo
-        """
-        pass
+        perimetro = (2*base) + (2*altura)
+        return perimetro
     
     def area_circulo(self, radio):
         """
