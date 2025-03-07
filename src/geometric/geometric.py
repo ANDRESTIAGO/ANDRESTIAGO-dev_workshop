@@ -40,20 +40,23 @@ class Geometria:
         return perimetro
     
     def es_triangulo_valido(self, lado1, lado2, lado3):
-        """
-        Verifica si tres longitudes pueden formar un triángulo válido.
-        Un triángulo es válido si la suma de las longitudes de dos lados
-        es mayor que la longitud del tercer lado, para todos los lados.
-        
-        Args:
-            lado1 (float): Longitud del primer lado
-            lado2 (float): Longitud del segundo lado
-            lado3 (float): Longitud del tercer lado
-            
-        Returns:
-            bool: True si los lados pueden formar un triángulo, False en caso contrario
-        """
-        pass
+        a = 0
+        if ((lado1 + lado2)>lado3):
+            a += 1
+        else:
+            a -= 1
+        if ((lado2 + lado3)>lado1):
+            a += 1
+        else:
+            a -= 1
+        if ((lado3 + lado1)>lado2):
+            a += 1
+        else:
+            a -= 1
+        if (a == 3):
+             return True
+        else:
+             return False
     
     def area_trapecio(self, base_mayor, base_menor, altura):
         """
