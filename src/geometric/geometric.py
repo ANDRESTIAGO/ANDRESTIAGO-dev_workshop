@@ -22,16 +22,9 @@ class Geometria:
         return perimetro
     
     def area_circulo(self, radio):
-        """
-        Calcula el área de un círculo.
-        
-        Args:
-            radio (float): Radio del círculo
-            
-        Returns:
-            float: Área del círculo
-        """
-        pass
+        import math
+        area = (math.pi)*radio**2
+        return area
     
     def perimetro_circulo(self, radio):
         """
