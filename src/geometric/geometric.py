@@ -27,16 +27,9 @@ class Geometria:
         return area
     
     def perimetro_circulo(self, radio):
-        """
-        Calcula el perímetro (circunferencia) de un círculo.
-        
-        Args:
-            radio (float): Radio del círculo
-            
-        Returns:
-            float: Perímetro del círculo
-        """
-        pass
+        import math
+        perimetroc = 2*(math.pi)*radio
+        return perimetroc
     
     def area_triangulo(self, base, altura):
         """
