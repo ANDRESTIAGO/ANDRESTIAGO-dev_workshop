@@ -32,17 +32,8 @@ class Geometria:
         return perimetroc
     
     def area_triangulo(self, base, altura):
-        """
-        Calcula el área de un triángulo.
-        
-        Args:
-            base (float): Longitud de la base del triángulo
-            altura (float): Altura del triángulo
-            
-        Returns:
-            float: Área del triángulo
-        """
-        pass
+        area = (base * altura)/2
+        return area
     
     def perimetro_triangulo(self, lado1, lado2, lado3):
         """
