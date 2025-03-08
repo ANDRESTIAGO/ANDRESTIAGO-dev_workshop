@@ -84,16 +84,8 @@ class Geometria:
         return perimetro
     
     def volumen_cubo(self, lado):
-        """
-        Calcula el volumen de un cubo.
-        
-        Args:
-            lado (float): Longitud del lado del cubo
-            
-        Returns:
-            float: Volumen del cubo
-        """
-        pass
+        volumen = lado ** 3
+        return volumen
     
     def area_superficie_cubo(self, lado):
         """
