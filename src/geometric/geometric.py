@@ -97,16 +97,9 @@ class Geometria:
         return volumen
     
     def area_superficie_esfera(self, radio):
-        """
-        Calcula el área de la superficie de una esfera.
-        
-        Args:
-            radio (float): Radio de la esfera
-            
-        Returns:
-            float: Área de la superficie de la esfera
-        """
-        pass
+        import math
+        area = 4*math.pi*radio**2
+        return area
     
     def volumen_cilindro(self, radio, altura):
         """
