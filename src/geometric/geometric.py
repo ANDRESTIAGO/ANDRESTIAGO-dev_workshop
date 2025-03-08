@@ -67,17 +67,9 @@ class Geometria:
         return area
     
     def area_pentagono_regular(self, lado, apotema):
-        """
-        Calcula el área de un pentágono regular.
-        
-        Args:
-            lado (float): Longitud del lado del pentágono
-            apotema (float): Longitud de la apotema (distancia del centro al punto medio de un lado)
-            
-        Returns:
-            float: Área del pentágono regular
-        """
-        pass
+        perimetro = lado * 5
+        area = (perimetro * apotema)/2
+        return area
     
     def perimetro_pentagono_regular(self, lado):
         """
