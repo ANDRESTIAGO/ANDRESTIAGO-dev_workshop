@@ -80,16 +80,8 @@ class Geometria:
         return area
     
     def perimetro_hexagono_regular(self, lado):
-        """
-        Calcula el perímetro de un hexágono regular.
-        
-        Args:
-            lado (float): Longitud del lado del hexágono
-            
-        Returns:
-            float: Perímetro del hexágono regular
-        """
-        pass
+        perimetro = lado *6
+        return perimetro
     
     def volumen_cubo(self, lado):
         """
