@@ -114,7 +114,7 @@ class Geometria:
     def distancia_entre_puntos(self, x1, y1, x2, y2):
         import math
         distancia = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
-        return distancia
+        return round(distancia, 2)
     
     def punto_medio(self, x1, y1, x2, y2):
         punto_x = ((x1 + x2)/2)
