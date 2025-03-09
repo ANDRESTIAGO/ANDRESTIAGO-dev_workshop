@@ -126,6 +126,10 @@ class Geometria:
         return pendiente
     
     def ecuacion_recta(self, x1, y1, x2, y2):
+        A = (y2 - y1)
+        B = -(x2 - x1)
+        C = -(A * x1 + B * y1)
+        return A, B, C
         """
         Obtiene los coeficientes de la ecuación de una recta en la forma Ax + By + C = 0.
         
