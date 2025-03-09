@@ -112,19 +112,9 @@ class Geometria:
         return area
     
     def distancia_entre_puntos(self, x1, y1, x2, y2):
-        """
-        Calcula la distancia euclidiana entre dos puntos en un plano 2D.
-        
-        Args:
-            x1 (float): Coordenada x del primer punto
-            y1 (float): Coordenada y del primer punto
-            x2 (float): Coordenada x del segundo punto
-            y2 (float): Coordenada y del segundo punto
-            
-        Returns:
-            float: Distancia entre los dos puntos
-        """
-        pass
+        import math
+        distancia = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+        return distancia
     
     def punto_medio(self, x1, y1, x2, y2):
         """
