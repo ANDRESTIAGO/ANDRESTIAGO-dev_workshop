@@ -32,6 +32,10 @@ class Logica:
         return r
     
     def implicacion(self, a, b):
+        if (b == True):
+            return True
+        else:
+            return False
         """
         Implementa la operación lógica de implicación (a -> b).
         
