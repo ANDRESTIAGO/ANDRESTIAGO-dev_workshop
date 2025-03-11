@@ -28,17 +28,8 @@ class Logica:
         return r
     
     def XNOR(self, a, b):
-        """
-        Implementa la operación lógica XNOR (NOT XOR).
-        
-        Args:
-            a (bool): Primer valor booleano
-            b (bool): Segundo valor booleano
-            
-        Returns:
-            bool: Resultado de a XNOR b
-        """
-        pass
+        r = not((a or b) and not (a and b))
+        return r
     
     def implicacion(self, a, b):
         """
