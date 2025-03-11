@@ -8,42 +8,16 @@ class Logica:
         return r
     
     def OR(self, a, b):
-        """
-        Implementa la operación lógica OR.
-        
-        Args:
-            a (bool): Primer valor booleano
-            b (bool): Segundo valor booleano
-            
-        Returns:
-            bool: Resultado de a OR b
-        """
-        pass
+        r = a or b
+        return r
     
     def NOT(self, a):
-        """
-        Implementa la operación lógica NOT.
-        
-        Args:
-            a (bool): Valor booleano
-            
-        Returns:
-            bool: Resultado de NOT a
-        """
-        pass
+        r = not a
+        return r
     
     def XOR(self, a, b):
-        """
-        Implementa la operación lógica XOR (OR exclusivo).
-        
-        Args:
-            a (bool): Primer valor booleano
-            b (bool): Segundo valor booleano
-            
-        Returns:
-            bool: Resultado de a XOR b
-        """
-        pass
+        r = (a or b) and not (a and b)
+        return r
     
     def NAND(self, a, b):
         """
