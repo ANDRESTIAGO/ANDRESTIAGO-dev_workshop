@@ -32,10 +32,11 @@ class Logica:
         return r
     
     def implicacion(self, a, b):
-        if (b == True):
-            return b
-        else:
+        if (a == True and b == False):  
             return False
+        else:
+            return True
+
     
     def bi_implicacion(self, a, b):
         r = a == b
