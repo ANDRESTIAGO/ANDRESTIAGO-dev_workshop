@@ -11,18 +11,11 @@ class Data:
         return lista_invertida
     
     def buscar_elemento(self, lista, elemento):
-        """
-        Busca un elemento en una lista y devuelve su índice (o -1 si no existe).
-        Implementación manual sin usar index().
-        
-        Args:
-            lista (list): Lista donde buscar
-            elemento: Elemento a buscar
-            
-        Returns:
-            int: Índice del elemento o -1 si no se encuentra
-        """
-        pass
+        r = -1
+        for i in range(len(lista)):
+                if(lista[i] == elemento):
+                        r = i
+        return r
     
     def eliminar_duplicados(self, lista):
         """
