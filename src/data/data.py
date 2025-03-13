@@ -12,9 +12,12 @@ class Data:
     
     def buscar_elemento(self, lista, elemento):
         r = -1
+        r = -1
         for i in range(len(lista)):
                 if(lista[i] == elemento):
                         r = i
+        if (r > 2):
+                r= 1
         return r
     
     def eliminar_duplicados(self, lista):
