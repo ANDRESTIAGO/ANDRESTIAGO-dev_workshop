@@ -5,16 +5,10 @@ class Data:
     """
     
     def invertir_lista(self, lista):
-        """
-        Invierte el orden de los elementos en una lista sin usar reversed() o lista[::-1].
-        
-        Args:
-            lista (list): Lista a invertir
-            
-        Returns:
-            list: Lista con los elementos en orden inverso
-        """
-        pass
+        lista_invertida = []
+        for elemento in lista:
+            lista_invertida.insert(0, elemento)
+        return lista_invertida
     
     def buscar_elemento(self, lista, elemento):
         """
