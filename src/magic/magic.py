@@ -5,16 +5,18 @@ class Magic:
     """
     
     def fibonacci(self, n):
-        """
-        Calcula el n-ésimo número de la secuencia de Fibonacci.
-        
-        Args:
-            n (int): Posición en la secuencia (empezando desde 0)
-            
-        Returns:
-            int: El n-ésimo número de Fibonacci
-        """
-        pass
+        if n < 0:
+            print("n debe ser un número entero no negativo")
+            return
+        elif n == 0:
+            return 0
+        elif n == 1:
+            return 1
+
+        a, b = 0, 1
+        for i in range(2, n + 1):
+            a, b = b, a + b
+        return b
     
     def secuencia_fibonacci(self, n):
         """
