@@ -23,10 +23,12 @@ class Data:
     def eliminar_duplicados(self, lista):
         resultado = []
         for elemento in lista:
-            if elemento not in resultado:
-                resultado.append(elemento)
-        return resultado
-
+                if elemento == bool:
+                        elemento = str(elemento) in lista
+        for elemento in lista:
+                if elemento not in resultado:
+                        resultado.append(elemento)
+        return(resultado)
     
     def merge_ordenado(self, lista1, lista2):
         resultado = []
