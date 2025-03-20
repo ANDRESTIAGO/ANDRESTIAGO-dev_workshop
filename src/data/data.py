@@ -21,6 +21,7 @@ class Data:
         return r
     
     def eliminar_duplicados(self, lista):
+        
         """
         Elimina elementos duplicados de una lista sin usar set().
         Mantiene el orden original de aparición.
@@ -31,7 +32,7 @@ class Data:
         Returns:
             list: Lista sin elementos duplicados
         """
-        pass
+        
     
     def merge_ordenado(self, lista1, lista2):
         """
