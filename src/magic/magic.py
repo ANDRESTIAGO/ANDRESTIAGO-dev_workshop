@@ -83,30 +83,19 @@ class Magic:
         return resultado
     
     def mcd(self, a, b):
-        """
-        Calcula el máximo común divisor de dos números.
-        
-        Args:
-            a (int): Primer número
-            b (int): Segundo número
-            
-        Returns:
-            int: El máximo común divisor de a y b
-        """
-        pass
+        while b != 0:
+            a, b = b, a % b
+        return a
     
     def mcm(self, a, b):
-        """
-        Calcula el mínimo común múltiplo de dos números.
-        
-        Args:
-            a (int): Primer número
-            b (int): Segundo número
-            
-        Returns:
-            int: El mínimo común múltiplo de a y b
-        """
-        pass
+        if a == 0 or b == 0:
+            return 0
+        mayor = max(a, b)
+        menor = min(a, b)
+        mcm = mayor
+        while mcm % menor != 0:
+            mcm += mayor
+        return mcm
     
     def suma_digitos(self, n):
         """
