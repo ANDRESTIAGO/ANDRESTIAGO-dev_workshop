@@ -74,16 +74,11 @@ class Strings:
         pass
     
     def es_numero_entero(self, texto):
-        """
-        Verifica si una cadena representa un número entero sin usar isdigit().
-        
-        Args:
-            texto (str): Cadena a verificar
-            
-        Returns:
-            bool: True si la cadena representa un número entero, False en caso contrario
-        """
-        pass
+        r = True
+        for elemento in texto:
+            if elemento == ".":
+                r = False
+        return(r)
     
     def cifrar_cesar(self, texto, desplazamiento):
         """
@@ -112,14 +107,8 @@ class Strings:
         pass
     
     def encontrar_subcadena(self, texto, subcadena):
-        """
-        Encuentra todas las posiciones de una subcadena en un texto sin usar find() o index().
-        
-        Args:
-            texto (str): Cadena principal
-            subcadena (str): Subcadena a buscar
-            
-        Returns:
-            list: Lista con las posiciones iniciales de cada ocurrencia
-        """
-        pass
+        posiciones = []
+        for i in range(len(texto) - len(subcadena) + 1):
+            if texto[i:i + len(subcadena)] == subcadena:
+                posiciones.append(i)
+        return posiciones
