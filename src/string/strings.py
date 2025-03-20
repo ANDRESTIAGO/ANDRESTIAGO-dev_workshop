@@ -24,13 +24,15 @@ class Strings:
     
     def contar_vocales(self, texto):
         n = 0
+        texto = texto.lower()
         for elemento in texto:
             if elemento == "a" or elemento == "e" or elemento == "i" or elemento == "o" or elemento == "u":
                 n = n+1
-        return n      
+        return (n)     
     
     def contar_consonantes(self, texto):
         n = 0
+        texto = texto.lower()
         for elemento in texto:
             if elemento in ("aeiou"):
                 n = n+1
@@ -53,13 +55,16 @@ class Strings:
         palabras = 0
         for palabra in texto.split():
             palabras += 1
-        print(palabras)
+        return(palabras)
     
     def palabras_mayus(self, texto):
         resultado = ""
-        for palabra in texto.split():
-            resultado += palabra[0].upper() + palabra[1:] + " "
-        return resultado.strip()
+        for palabra in texto.split(" "):
+            if palabra:
+                resultado += palabra[0].upper() + palabra[1:] + " "
+            else:
+                resultado += " "
+        return resultado
     
     def eliminar_espacios_duplicados(self, texto):
         """
@@ -74,11 +79,10 @@ class Strings:
         pass
     
     def es_numero_entero(self, texto):
-        r = True
         for elemento in texto:
             if elemento == ".":
-                r = False
-        return(r)
+                return False
+        return True
     
     def cifrar_cesar(self, texto, desplazamiento):
         """
