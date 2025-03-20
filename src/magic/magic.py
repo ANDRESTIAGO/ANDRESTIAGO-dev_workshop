@@ -98,28 +98,15 @@ class Magic:
         return mcm
     
     def suma_digitos(self, n):
-        """
-        Calcula la suma de los dígitos de un número.
-        
-        Args:
-            n (int): Número para sumar sus dígitos
-            
-        Returns:
-            int: La suma de los dígitos de n
-        """
-        pass
+        suma = 0
+        for digito in str(abs(n)):
+            suma += int(digito)
+        return suma
     
     def es_numero_armstrong(self, n):
-        """
-        Verifica si un número es de Armstrong (igual a la suma de sus dígitos elevados a la potencia del número de dígitos).
-        
-        Args:
-            n (int): Número a verificar
-            
-        Returns:
-            bool: True si n es un número de Armstrong, False en caso contrario
-        """
-        pass
+        digitos = str(n)
+        suma = sum(int(digito) ** len(digitos) for digito in digitos)
+        return suma == n
     
     def es_cuadrado_magico(self, matriz):
         """
