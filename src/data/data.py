@@ -64,29 +64,16 @@ class Data:
         return resultado
     
     def encuentra_numero_faltante(self, lista):
-        """
-        Encuentra el número faltante en una lista de enteros del 1 al n.
-        
-        Args:
-            lista (list): Lista de enteros del 1 al n con un número faltante
-            
-        Returns:
-            int: El número que falta en la secuencia
-        """
-        pass
+        n = len(lista) + 1
+        suma_esperada = n * (n + 1) // 2
+        suma_actual = sum(lista)
+        return suma_esperada - suma_actual
     
     def es_subconjunto(self, conjunto1, conjunto2):
-        """
-        Verifica si conjunto1 es subconjunto de conjunto2 sin usar set.
-        
-        Args:
-            conjunto1 (list): Posible subconjunto
-            conjunto2 (list): Conjunto principal
-            
-        Returns:
-            bool: True si conjunto1 es subconjunto de conjunto2, False en caso contrario
-        """
-        pass
+        for elemento in conjunto1:
+            if elemento not in conjunto2:
+                return False
+        return True
     
     def implementar_pila(self):
         """
