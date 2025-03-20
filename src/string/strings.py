@@ -30,16 +30,11 @@ class Strings:
         return n      
     
     def contar_consonantes(self, texto):
-        """
-        Cuenta el número de consonantes en una cadena.
-        
-        Args:
-            texto (str): Cadena para contar consonantes
-            
-        Returns:
-            int: Número de consonantes en la cadena
-        """
-        pass
+        n = 0
+        for elemento in texto:
+            if elemento in ("aeiou"):
+                n = n+1
+        return n
     
     def es_anagrama(self, texto1, texto2):
         """
@@ -55,28 +50,16 @@ class Strings:
         pass
     
     def contar_palabras(self, texto):
-        """
-        Cuenta el número de palabras en una cadena.
-        
-        Args:
-            texto (str): Cadena para contar palabras
-            
-        Returns:
-            int: Número de palabras en la cadena
-        """
-        pass
+        palabras = 0
+        for palabra in texto.split():
+            palabras += 1
+        print(palabras)
     
     def palabras_mayus(self, texto):
-        """
-        Pon en Mayuscula la primera letra de cada palabra en una cadena.
-        
-        Args:
-            texto (str): Cadena
-            
-        Returns:
-            str: Cadena con la primera letra de cada palabra en mayúscula
-        """
-        pass
+        resultado = ""
+        for palabra in texto.split():
+            resultado += palabra[0].upper() + palabra[1:] + " "
+        return resultado.strip()
     
     def eliminar_espacios_duplicados(self, texto):
         """
